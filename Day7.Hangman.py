@@ -62,7 +62,6 @@ stages = ['''
 
 # 1. enlarging list of words & random choice
 word_list = open('words').read().split("\n")
-#word_list = ["kasia", "cos", "nikt", "cares"]
 word = random.choice(word_list)
 
 # 2. hiding letters for the user output
