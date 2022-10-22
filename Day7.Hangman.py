@@ -1,64 +1,8 @@
 import random
 import time
 from replit import clear
+from Hangman_stages import stages
 
-
-stages = ['''
-  +---+
-  |   |
-  O   |
- /|\  |
- / \  |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
- /    |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|\  |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========
-''', '''
-  +---+
-  |   |
-      |
-      |
-      |
-      |
-=========
-''']
 
 # 1. enlarging list of words & random choice
 word_list = open('words').read().split("\n")
